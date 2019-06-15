@@ -1,0 +1,115 @@
+
+
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+
+html,body{
+   min-height: 100%;
+   background-color: #4DBCE9;
+}
+
+
+#app{
+   min-height: 100%;
+   #app-container{
+    height: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   }
+}
+
+#calculator-container{
+    height: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#calculator{
+   margin: 0px auto;
+   width: 300px;
+   padding: 10px;
+   border-radius: 15px;
+   background-color: black;
+   height: fit-content;
+}
+
+#display-container{
+   text-align: right;
+   color: white;
+   
+   #output{
+         
+   }
+   p{
+      font-family: "Share Tech Mono";
+      font-size: 20px;
+      height: 20px;
+      margin-top: 0px;
+      margin-bottom: 10px;
+   }
+}
+
+#pad{
+   button{
+      border-radius: 0px !important;
+      width: 70px;
+      height: 65px;
+   }
+   
+   .big-pad{
+      width: 140px;
+   }
+   
+   .equal{
+      height: 130px;
+      position: absolute;
+   }
+   
+}
+
+
+#credits{
+   @keyframes heartbeat{
+      to { 
+       transform: scale(1.4); 
+     }
+   }
+
+   #footer {
+      color: white;
+      background-color: black;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      height: 40px;
+      width: 100%;
+      a{
+         color: cyan;
+      }
+   }
+
+   #phantom-footer {
+      display: block;
+      padding: 15px;
+      height: 45px;
+      width: 100%;
+   }
+   
+   #code-icon{
+     color:cyan;
+      font-size: 20px;
+   }
+
+   #heart-icon{
+     color:Red;
+     animation: heartbeat .30s infinite alternate;
+   }
+}
+
+.egg{
+   color: #f24b6d;
+}
